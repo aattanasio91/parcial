@@ -1,10 +1,10 @@
 const formulario = document.getElementById('formulario');
 
-document.getElementById('formulario').addEventListener('submit', function() {
+document.getElementById('inputBtn').addEventListener('click', function() {
     const dataUser = document.getElementById('dataUser');
     const dataPass = document.getElementById('dataPass');
     if (validarData(dataUser, dataPass)) {
-        location.href = "homePage.html";
+        location.replace("home-page.html");
     } else {
         alert('Usuario o password incorrecto. Recuerda que el usuario deben ser unicamente numeros y la contrasena requiere como minimo, 4 caracteres');
     }
@@ -57,9 +57,3 @@ function tiene_letras(texto) {
     }
     return 0;
 }
-
-
-
-document.getElementById('logout').addEventListener('click', () => {
-    location.href = "index.html";
-});

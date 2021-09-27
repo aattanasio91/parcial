@@ -77,7 +77,21 @@ section .contentBx .formBx .inputBx input {
     border-radius: 30px;
 }
 
-section .contentBx .formBx .inputBx input[type="submit"] {
+section .contentBx .formBx .inputBx button {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+
+section .contentBx .formBx .inputBx button[value="Ingresar"] {
     background: #ff4584;
     color: #fff;
     outline: none;
@@ -86,7 +100,7 @@ section .contentBx .formBx .inputBx input[type="submit"] {
     cursor: pointer;
 }
 
-section .contentBx .formBx .inputBx input[type="submit"]:hover {
+section .contentBx .formBx .inputBx button[value="Ingresar"]:hover {
     background: #f53677;
 }
 
@@ -108,3 +122,4 @@ section .contentBx .formBx p a {
 .navbar {
     margin-bottom: 50px;
 }
+
